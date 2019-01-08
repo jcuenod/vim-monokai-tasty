@@ -57,7 +57,7 @@ function! Highlight(group, fg, bg, style)
         \ . " gui=" . a:style["gui"]
 endfunction
 
-call Highlight("Normal", s:white, s:charcoal, s:none)
+call Highlight("Normal", s:white, s:none, s:none)
 
 call Highlight("Cursor", s:charcoal, s:light_blue, s:none)
 call Highlight("Special", s:purple, s:none, s:none)
@@ -93,7 +93,7 @@ call Highlight("TabLineSel", s:none, s:charcoal, s:bold)
 call Highlight("SignColumn", s:grey, s:darker_grey, s:none)
 call Highlight("NonText", s:darker_grey, s:none, s:none)
 call Highlight("TabLineFill", s:none, s:darker_grey, s:none)
-call Highlight("LineNr", s:darker_grey, s:none, s:none)
+call Highlight("LineNr", s:orange, s:none, s:none)
 call Highlight("VertSplit", s:darker_grey, s:charcoal, s:none)
 call Highlight("StatusLine", s:white, s:dark_grey, s:none)
 call Highlight("StatusLineNC", s:light_grey, s:darker_grey, s:none)
